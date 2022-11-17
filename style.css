@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+}
+
+table {
+  border-spacing: 10px;
+}
+
+.centred {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  box-shadow: 2px 2px 15px #918f8e;
+  transition-duration: 0.2s;
+}
+
+.plus {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  transition-duration: 0.2s;
+}
+
+.vertical {
+  width: 4px;
+  height: 40px;
+  background-color: #978e8c;
+  position: relative;
+  left: 18px;
+  transition-duration: 0.2s;
+}
+
+.horizontal {
+  width: 40px;
+  height: 4px;
+  background-color: #978e8c;
+  position: relative;
+  bottom: 22px;
+  transition-duration: 0.2s;
+}
+
+/*mousedown*/
+
+.down{
+  box-shadow: 
+    0 0 5px #918f8e,
+    inset 3px 3px 20px #918f8e
+  ;
+}
+
+/*active*/
+
+.active {
+  background-color: #f2233c;
+  box-shadow: 1px 1px 20px #f2233c;
+}
+
+.active .plus {
+  transform: rotate(45deg);
+}
+
+.active .vertical,
+.active .horizontal {
+  background-color: white;
+}
+
+/*ok*/
+
+.ok {
+  background-color: #53fa6e;
+  box-shadow: 1px 1px 45px #53fa6e;
+}
+/*
+.ok .plus {
+  transform: rotate(45deg);
+}*/
+
+.ok .vertical,
+.ok .horizontal {
+  background-color: white;
+}
+
+.ok .vertical {
+  transform: translate(14px) rotate(45deg);
+}
+
+.ok .horizontal {
+  width: 30px;
+  transform: translate(-5px, 5px) rotate(45deg);
+}
